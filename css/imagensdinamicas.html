@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100&display=swap');
+        @font-face {
+            font-family: 'huntingnight';
+            src: url('HuntingNight.otf') format('opentype'), 
+            url(HuntingNight.ttf) format('truetype');
+        }
+        body{
+            font-family: 'huntingnight', sans-serif;
+        }
+    </style>
+    
+    <!--<style>
+        body{
+            /* SEQUÊNCIA CORRETA:
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 1.1em;
+            font-family: 'Courier New', Courier, monospace;*/
+            font:italic bold 1.1em 'Courier New', Courier, monospace;
+        }
+    </style>-->
+    <p>Imagens Dinâmicas</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique feugiat maximus. Donec enim felis, mattis vehicula nunc ac, gravida tincidunt massa. Ut rutrum, nibh a dictum commodo, lectus metus ullamcorper arcu, non vestibulum purus diam at urna. Integer quis molestie lectus, id vehicula velit. Vestibulum eget turpis vitae eros lacinia tincidunt in nec elit. Quisque tristique neque in convallis bibendum. Vestibulum interdum malesuada dui nec efficitur.</p>
+</head>
+<body>
+    <picture>
+        <source media="(max-width:775px)" srcset="imgs/pexels-pixabay-207296s.jpg">
+        <source media="(max-width:1025px)" srcset="imgs/pexels-pixabay-207296m.jpg">
+        <img src="imgs/pexels-pixabay-207296.jpg" alt="troncos de madeira">
+    </picture>
+</body>
+</html>
